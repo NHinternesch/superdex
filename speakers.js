@@ -1,5 +1,6 @@
 // Superweek 2026 Speaker Database
-const speakers = {
+// Make speakers available globally
+window.speakers = {
     'doug hall': {
         name: 'Doug Hall',
         company: 'Duga Digital - Casefabre',
@@ -318,21 +319,39 @@ const speakers = {
 };
 
 // Helper function to find speaker by partial name match
-function findSpeaker(query) {
+// Make findSpeaker available globally
+window.findSpeaker = function(query) {
     const searchQuery = query.toLowerCase().trim();
 
+    console.log('Searching for:', searchQuery);
+    console.log('Total speakers:', Object.keys(window.speakers).length);
+
     // Direct match
-    if (speakers[searchQuery]) {
-        return speakers[searchQuery];
+    if (window.speakers[searchQuery]) {
+        console.log('Direct match found!');
+        return window.speakers[searchQuery];
     }
 
     // Partial match (first name, last name, or full name)
-    for (const [key, speaker] of Object.entries(speakers)) {
+    for (const [key, speaker] of Object.entries(window.speakers)) {
         const name = speaker.name.toLowerCase();
-        if (name.includes(searchQuery) || searchQuery.includes(name.split(' ')[0])) {
+        const firstName = name.split(' ')[0];
+        const lastName = name.split(' ').slice(-1)[0];
+
+        // Match if query contains any part of the name or vice versa
+        if (name.includes(searchQuery) ||
+            searchQuery.includes(firstName) ||
+            searchQuery.includes(lastName) ||
+            firstName.includes(searchQuery) ||
+            lastName.includes(searchQuery)) {
+            console.log('Partial match found:', speaker.name);
             return speaker;
         }
     }
 
+    console.log('No match found');
     return null;
-}
+};
+
+// Also expose speakers as a const for backward compatibility
+const speakers = window.speakers;

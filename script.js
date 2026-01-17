@@ -153,6 +153,13 @@ async function fetchSpeakerData(query) {
 
         console.log(`🔍 Searching for speaker: "${query}"`);
 
+        // Check if findSpeaker exists
+        if (typeof findSpeaker !== 'function') {
+            console.error('❌ findSpeaker function not found!');
+            console.log('Available globals:', Object.keys(window));
+            return null;
+        }
+
         // Use the findSpeaker helper from speakers.js
         const speaker = findSpeaker(query);
 
@@ -224,7 +231,7 @@ document.querySelector('.light-main').addEventListener('click', async function()
     lightClickCount++;
     if (lightClickCount >= 3) {
         lightClickCount = 0;
-        const speakerNames = Object.keys(speakers);
+        const speakerNames = Object.keys(window.speakers || {});
         const randomSpeaker = speakerNames[Math.floor(Math.random() * speakerNames.length)];
         speakerInput.value = randomSpeaker;
         await handleSearch();
@@ -233,6 +240,6 @@ document.querySelector('.light-main').addEventListener('click', async function()
 
 // Initialize
 console.log('🎮 Superweek Pokedex initialized!');
-console.log('👥 Total speakers loaded:', Object.keys(speakers).length);
+console.log('👥 Total speakers loaded:', Object.keys(window.speakers || {}).length);
 console.log('💡 Try searching for: Simo Ahava, Krista Seiden, Marie Fenner, Doug Hall');
 console.log('🎁 Easter egg: Triple-click the blue light for a random speaker!');
