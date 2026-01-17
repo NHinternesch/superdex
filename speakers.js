@@ -303,7 +303,7 @@ window.speakers = {
         company: null,
         companyUrl: null,
         location: 'Haarlem, The Netherlands',
-        image: 'https://ui-avatars.com/api/?name=Peter+O'Neill&size=200&background=ff6b6b&color=fff',
+        image: 'https://ui-avatars.com/api/?name=Peter+ONeill&size=200&background=ff6b6b&color=fff',
         linkedin: 'https://www.linkedin.com/in/petergoneill/',
         website: null
     },
