@@ -266,7 +266,7 @@ body::after {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     position: relative;
     overflow-y: auto;
@@ -327,16 +327,7 @@ body::after {
     opacity: 0;
 }
 
-/* Initial State - add vertical centering */
-#initialState,
-#loadingState,
-#errorState {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100%;
-}
+/* Screen Content States - removed forced centering to allow dynamic sizing */
 
 .screen-title {
     font-size: 18px;
