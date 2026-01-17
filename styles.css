@@ -122,59 +122,68 @@ body::after {
     gap: 20px;
 }
 
-/* Superweek Logo */
+/* Superweek Logo - 7 rotating dots */
 .superweek-logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    animation: logoRotate 6s linear infinite;
 }
 
-.logo-circle {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
-    border: 4px solid #1a1a1a;
-    box-shadow:
-        0 0 20px rgba(0, 0, 0, 0.3),
-        inset 0 2px 4px rgba(255, 255, 255, 0.2);
+.logo-dots {
     position: relative;
-    animation: logoRotate 8s linear infinite;
+    width: 80px;
+    height: 80px;
 }
 
-.logo-circle::before {
-    content: '';
+.dot {
     position: absolute;
+    width: 22px;
+    height: 22px;
+    background: #1a1a1a;
+    border-radius: 50%;
+    box-shadow:
+        0 4px 8px rgba(0, 0, 0, 0.4),
+        inset 0 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+/* Position dots in circular pattern */
+.dot:nth-child(1) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-.logo-circle::after {
-    content: '';
-    position: absolute;
+.dot:nth-child(2) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot:nth-child(3) {
+    top: 15%;
+    right: 15%;
+}
+
+.dot:nth-child(4) {
     top: 50%;
-    left: 0;
     right: 0;
-    height: 4px;
-    background: #1a1a1a;
     transform: translateY(-50%);
 }
 
-.logo-text {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 20px;
-    color: #1a1a1a;
-    text-shadow:
-        2px 2px 0 #fff,
-        4px 4px 8px rgba(0, 0, 0, 0.3);
-    letter-spacing: 2px;
+.dot:nth-child(5) {
+    bottom: 15%;
+    right: 15%;
+}
+
+.dot:nth-child(6) {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot:nth-child(7) {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 
 @keyframes logoRotate {
