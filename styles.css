@@ -8,40 +8,48 @@
 body {
     font-family: 'Press Start 2P', cursive;
     background:
-        /* Sky gradient */
+        /* Winter sky gradient */
         linear-gradient(to bottom,
-            #87CEEB 0%,
-            #98D8E8 30%,
-            #B8E2F2 60%,
-            #E0F4FF 100%
+            #B8D4E8 0%,
+            #D4E4F0 30%,
+            #E8F0F7 60%,
+            #F0F6FA 100%
         );
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
     overflow: hidden;
     position: relative;
 }
 
-/* Clouds */
+/* Falling snow */
 body::before {
     content: '';
     position: absolute;
-    top: 10%;
+    top: 0;
     left: 0;
     right: 0;
-    height: 200px;
+    bottom: 0;
     background-image:
-        radial-gradient(ellipse 80px 30px at 20% 50%, rgba(255,255,255,0.8) 0%, transparent 50%),
-        radial-gradient(ellipse 100px 40px at 60% 60%, rgba(255,255,255,0.7) 0%, transparent 50%),
-        radial-gradient(ellipse 70px 25px at 80% 40%, rgba(255,255,255,0.9) 0%, transparent 50%);
-    animation: cloudFloat 60s linear infinite;
+        radial-gradient(circle 2px at 20% 30%, white 1px, transparent 1px),
+        radial-gradient(circle 3px at 60% 70%, rgba(255,255,255,0.8) 1px, transparent 1px),
+        radial-gradient(circle 2px at 80% 10%, white 1px, transparent 1px),
+        radial-gradient(circle 3px at 40% 50%, rgba(255,255,255,0.7) 1px, transparent 1px),
+        radial-gradient(circle 2px at 90% 80%, white 1px, transparent 1px),
+        radial-gradient(circle 2px at 10% 60%, rgba(255,255,255,0.9) 1px, transparent 1px),
+        radial-gradient(circle 3px at 50% 20%, white 1px, transparent 1px),
+        radial-gradient(circle 2px at 30% 90%, rgba(255,255,255,0.8) 1px, transparent 1px);
+    background-size: 200px 200px;
+    animation: snowfall 30s linear infinite;
     pointer-events: none;
     z-index: 0;
 }
 
-/* Mountains - Hungarian landscape style */
+/* Snowy mountains - Hungarian winter landscape */
 body::after {
     content: '';
     position: absolute;
@@ -50,26 +58,25 @@ body::after {
     right: 0;
     height: 40%;
     background:
-        /* Front mountains */
-        linear-gradient(to bottom, transparent 0%, transparent 40%, #4a7c59 40%, #4a7c59 60%, #3d6b4a 100%),
-        /* Back mountains */
-        radial-gradient(ellipse 800px 300px at 20% 100%, #5d8a6f 0%, transparent 60%),
-        radial-gradient(ellipse 600px 250px at 50% 100%, #6b9c7a 0%, transparent 65%),
-        radial-gradient(ellipse 700px 280px at 80% 100%, #5d8a6f 0%, transparent 60%),
-        /* Grass/forest texture */
-        repeating-linear-gradient(90deg,
-            #4a7c59 0px,
-            #4a7c59 2px,
-            #3d6b4a 2px,
-            #3d6b4a 4px
+        /* Snow-covered mountains */
+        radial-gradient(ellipse 800px 300px at 20% 100%, #E8F0F7 0%, #D4E4F0 40%, transparent 60%),
+        radial-gradient(ellipse 600px 250px at 50% 100%, #F0F6FA 0%, #E8F0F7 45%, transparent 65%),
+        radial-gradient(ellipse 700px 280px at 80% 100%, #E8F0F7 0%, #D4E4F0 40%, transparent 60%),
+        /* Snowy ground */
+        linear-gradient(to bottom,
+            transparent 0%,
+            transparent 40%,
+            #F8FAFC 40%,
+            #EFF6FF 60%,
+            #E0E7FF 100%
         );
     pointer-events: none;
     z-index: 0;
 }
 
-@keyframes cloudFloat {
-    0% { transform: translateX(-10%); }
-    100% { transform: translateX(10%); }
+@keyframes snowfall {
+    0% { transform: translateY(-200px); }
+    100% { transform: translateY(200px); }
 }
 
 @keyframes slide {
@@ -81,15 +88,21 @@ body::after {
     perspective: 1000px;
     position: relative;
     z-index: 1;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
 }
 
 /* Pokedex Device */
 .pokedex {
-    width: 420px;
-    max-width: 100%;
+    width: 380px;
+    max-width: 95vw;
+    max-height: 95vh;
     background: linear-gradient(145deg, #dc2626, #991b1b);
-    border-radius: 25px 25px 35px 35px;
-    padding: 25px;
+    border-radius: 20px 20px 30px 30px;
+    padding: 18px;
     box-shadow:
         0 25px 70px rgba(0, 0, 0, 0.6),
         inset 0 2px 6px rgba(255, 255, 255, 0.3),
@@ -97,6 +110,9 @@ body::after {
     transform-style: preserve-3d;
     transition: transform 0.3s ease;
     position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .pokedex::before {
@@ -113,7 +129,8 @@ body::after {
 
 /* Top Section with Lights */
 .pokedex-top {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    flex-shrink: 0;
 }
 
 .light-panel {
@@ -123,15 +140,15 @@ body::after {
 }
 
 .light-main {
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     background: radial-gradient(circle at 30% 30%, #67e8f9, #06b6d4);
     border-radius: 50%;
-    border: 4px solid #1a1a1a;
+    border: 3px solid #1a1a1a;
     box-shadow:
-        0 0 20px rgba(103, 232, 249, 0.6),
-        inset 0 -3px 10px rgba(0, 0, 0, 0.3),
-        inset 3px 3px 6px rgba(255, 255, 255, 0.6);
+        0 0 15px rgba(103, 232, 249, 0.6),
+        inset 0 -3px 8px rgba(0, 0, 0, 0.3),
+        inset 3px 3px 5px rgba(255, 255, 255, 0.6);
     animation: pulse 2s ease-in-out infinite;
     position: relative;
 }
@@ -197,31 +214,60 @@ body::after {
 /* Screen Container */
 .pokedex-screen-container {
     background: #1a1a1a;
-    border-radius: 18px;
-    padding: 18px;
-    margin-bottom: 25px;
+    border-radius: 15px;
+    padding: 12px;
+    margin-bottom: 15px;
     box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.8);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
 }
 
 .screen-frame {
     background: linear-gradient(145deg, #2d2d2d, #1a1a1a);
-    border-radius: 12px;
-    padding: 12px;
+    border-radius: 10px;
+    padding: 10px;
     box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.7);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
 }
 
 .screen {
     background: linear-gradient(180deg, #a7f3d0, #6ee7b7);
-    min-height: 350px;
-    border-radius: 10px;
-    padding: 25px;
+    border-radius: 8px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
     box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.25);
+    flex: 1;
+    min-height: 0;
+}
+
+/* Custom scrollbar for screen */
+.screen::-webkit-scrollbar {
+    width: 8px;
+}
+
+.screen::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.screen::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.screen::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
 }
 
 /* Screen scanline effect */
@@ -384,44 +430,45 @@ body::after {
 }
 
 .profile-header {
-    margin-bottom: 18px;
+    margin-bottom: 10px;
+    flex-shrink: 0;
 }
 
 .speaker-image {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
-    border: 5px solid #1a1a1a;
+    border: 4px solid #1a1a1a;
     object-fit: cover;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     box-shadow:
-        0 6px 12px rgba(0, 0, 0, 0.4),
-        0 0 0 3px #fff;
+        0 4px 8px rgba(0, 0, 0, 0.4),
+        0 0 0 2px #fff;
     background: #fff;
 }
 
 .speaker-name {
-    font-size: 13px;
+    font-size: 11px;
     color: #1a1a1a;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.6);
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 .profile-stats {
     background: rgba(255, 255, 255, 0.4);
     border: 3px solid #1a1a1a;
-    border-radius: 8px;
-    padding: 14px;
-    margin-bottom: 18px;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
     text-align: left;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .stat-row {
-    margin-bottom: 10px;
-    font-size: 8px;
-    line-height: 1.6;
+    margin-bottom: 6px;
+    font-size: 7px;
+    line-height: 1.5;
     display: flex;
     flex-direction: column;
 }
@@ -454,18 +501,18 @@ body::after {
 
 /* Moves Section - Pokemon Card Style */
 .moves-section {
-    margin-bottom: 18px;
+    margin-bottom: 10px;
     background: rgba(255, 255, 255, 0.5);
     border: 3px solid #1a1a1a;
-    border-radius: 8px;
-    padding: 12px;
+    border-radius: 6px;
+    padding: 10px;
 }
 
 .moves-title {
-    font-size: 9px;
+    font-size: 8px;
     color: #166534;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     text-align: center;
     letter-spacing: 1px;
 }
@@ -473,14 +520,14 @@ body::after {
 .move-list {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
 }
 
 .move-item {
     background: rgba(255, 255, 255, 0.7);
     border: 2px solid #1a1a1a;
-    border-radius: 6px;
-    padding: 8px 10px;
+    border-radius: 5px;
+    padding: 6px 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -517,16 +564,17 @@ body::after {
 
 .back-button,
 .retry-button {
-    padding: 12px 25px;
+    padding: 10px 20px;
     font-family: 'Press Start 2P', cursive;
-    font-size: 9px;
+    font-size: 8px;
     background: linear-gradient(145deg, #67e8f9, #06b6d4);
     color: #1a1a1a;
-    border: 4px solid #1a1a1a;
-    border-radius: 8px;
+    border: 3px solid #1a1a1a;
+    border-radius: 6px;
     cursor: pointer;
     transition: all 0.2s ease;
-    box-shadow: 0 4px 0 #0369a1;
+    box-shadow: 0 3px 0 #0369a1;
+    flex-shrink: 0;
 }
 
 .back-button:hover,
@@ -568,15 +616,16 @@ body::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 0;
+    padding: 8px 0 0 0;
+    flex-shrink: 0;
 }
 
 .dpad {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     position: relative;
     background: #1a1a1a;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.8);
 }
 
@@ -591,36 +640,36 @@ body::after {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 28px;
-    height: 28px;
-    border-radius: 5px 5px 0 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px 4px 0 0;
 }
 
 .dpad-btn.right {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 28px;
-    height: 28px;
-    border-radius: 0 5px 5px 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 0 4px 4px 0;
 }
 
 .dpad-btn.down {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 28px;
-    height: 28px;
-    border-radius: 0 0 5px 5px;
+    width: 22px;
+    height: 22px;
+    border-radius: 0 0 4px 4px;
 }
 
 .dpad-btn.left {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 28px;
-    height: 28px;
-    border-radius: 5px 0 0 5px;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px 0 0 4px;
 }
 
 .dpad-center {
@@ -628,8 +677,8 @@ body::after {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     background: #000;
     border-radius: 50%;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8);
@@ -641,12 +690,12 @@ body::after {
 }
 
 .button-circle {
-    width: 45px;
-    height: 45px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
-    border: 4px solid #1a1a1a;
+    border: 3px solid #1a1a1a;
     box-shadow:
-        0 5px 0 #000,
+        0 4px 0 #000,
         inset 0 -3px 6px rgba(0, 0, 0, 0.4);
     transition: transform 0.1s ease;
     position: relative;
