@@ -115,80 +115,9 @@ body::after {
     z-index: 1;
     max-height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: visible;
-    gap: 20px;
-}
-
-/* Superweek Logo - 7 rotating dots */
-.superweek-logo {
-    margin-bottom: 15px;
-    animation: logoRotate 6s linear infinite;
-}
-
-.logo-dots {
-    position: relative;
-    width: 80px;
-    height: 80px;
-}
-
-.dot {
-    position: absolute;
-    width: 22px;
-    height: 22px;
-    background: #1a1a1a;
-    border-radius: 50%;
-    box-shadow:
-        0 4px 8px rgba(0, 0, 0, 0.4),
-        inset 0 2px 4px rgba(255, 255, 255, 0.2);
-}
-
-/* Position dots in circular pattern */
-.dot:nth-child(1) {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.dot:nth-child(2) {
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.dot:nth-child(3) {
-    top: 15%;
-    right: 15%;
-}
-
-.dot:nth-child(4) {
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-}
-
-.dot:nth-child(5) {
-    bottom: 15%;
-    right: 15%;
-}
-
-.dot:nth-child(6) {
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.dot:nth-child(7) {
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-
-@keyframes logoRotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }
 
 /* Pokedex Device */
