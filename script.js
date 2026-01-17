@@ -19,7 +19,6 @@ const speakerName = document.getElementById('speakerName');
 const speakerCompany = document.getElementById('speakerCompany');
 const speakerLocation = document.getElementById('speakerLocation');
 const speakerLinkedin = document.getElementById('speakerLinkedin');
-const speakerWebsite = document.getElementById('speakerWebsite');
 
 // State Management
 let currentState = 'initial';
@@ -207,13 +206,6 @@ function displaySpeakerProfile(data) {
         speakerLinkedin.innerHTML = `<a href="${data.linkedin}" target="_blank" rel="noopener noreferrer">View Profile →</a>`;
     } else {
         speakerLinkedin.textContent = 'Not available';
-    }
-
-    // Set website
-    if (data.website) {
-        speakerWebsite.innerHTML = `<a href="${data.website}" target="_blank" rel="noopener noreferrer">Visit Site →</a>`;
-    } else {
-        speakerWebsite.textContent = 'Not available';
     }
 }
 
