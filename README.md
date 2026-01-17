@@ -2,4 +2,4 @@
 
 Gotta track 'em all.
 
-https://superweek.hu/
+https://superweek.hu
