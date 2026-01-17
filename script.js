@@ -19,6 +19,7 @@ const speakerName = document.getElementById('speakerName');
 const speakerCompany = document.getElementById('speakerCompany');
 const speakerLocation = document.getElementById('speakerLocation');
 const speakerLinkedin = document.getElementById('speakerLinkedin');
+const moveList = document.getElementById('moveList');
 
 // State Management
 let currentState = 'initial';
@@ -206,6 +207,41 @@ function displaySpeakerProfile(data) {
         speakerLinkedin.innerHTML = `<a href="${data.linkedin}" target="_blank" rel="noopener noreferrer">View Profile →</a>`;
     } else {
         speakerLinkedin.textContent = 'Not available';
+    }
+
+    // Set Moves (Pokemon style)
+    moveList.innerHTML = '';
+    if (data.moves && data.moves.length > 0) {
+        data.moves.forEach(move => {
+            const moveItem = document.createElement('div');
+            moveItem.className = 'move-item';
+            moveItem.innerHTML = `
+                <div class="move-name">
+                    <span class="move-type">${move.type}</span>
+                    <span>${move.name}</span>
+                </div>
+                <div class="move-damage">${move.damage}</div>
+            `;
+            moveList.appendChild(moveItem);
+        });
+    } else {
+        // Default moves if none specified
+        moveList.innerHTML = `
+            <div class="move-item">
+                <div class="move-name">
+                    <span class="move-type">📊</span>
+                    <span>Analytics Strike</span>
+                </div>
+                <div class="move-damage">75</div>
+            </div>
+            <div class="move-item">
+                <div class="move-name">
+                    <span class="move-type">💡</span>
+                    <span>Insight Beam</span>
+                </div>
+                <div class="move-damage">60</div>
+            </div>
+        `;
     }
 }
 

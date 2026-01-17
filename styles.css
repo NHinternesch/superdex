@@ -452,6 +452,69 @@ body::after {
     text-decoration: underline;
 }
 
+/* Moves Section - Pokemon Card Style */
+.moves-section {
+    margin-bottom: 18px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 3px solid #1a1a1a;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.moves-title {
+    font-size: 9px;
+    color: #166534;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.move-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.move-item {
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid #1a1a1a;
+    border-radius: 6px;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.move-item:hover {
+    transform: translateX(2px);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.move-name {
+    font-size: 7px;
+    color: #1a1a1a;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.move-type {
+    font-size: 12px;
+}
+
+.move-damage {
+    font-size: 8px;
+    color: #dc2626;
+    font-weight: bold;
+    background: rgba(220, 38, 38, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 2px solid #dc2626;
+}
+
 .back-button,
 .retry-button {
     padding: 12px 25px;
