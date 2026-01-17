@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Superweek Pokedex - Discover speakers from the Superweek analytics conference through a Pokemon-inspired interface">
+    <meta property="og:title" content="Superweek Pokedex">
+    <meta property="og:description" content="Catch 'em all! Discover Superweek 2026 speakers in Pokedex style">
+    <meta property="og:type" content="website">
+    <title>Superweek Pokedex</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="pokedex" id="pokedex">
+            <div class="pokedex-top">
+                <div class="light-panel">
+                    <div class="light-main"></div>
+                    <div class="light-small red"></div>
+                    <div class="light-small yellow"></div>
+                    <div class="light-small green"></div>
+                </div>
+            </div>
+
+            <div class="pokedex-screen-container">
+                <div class="screen-frame">
+                    <div class="screen" id="screen">
+                        <!-- Initial State -->
+                        <div class="screen-content" id="initialState">
+                            <h2 class="screen-title">Superweek Pokedex</h2>
+                            <p class="screen-prompt">Enter a speaker's name:</p>
+                            <input type="text" id="speakerInput" class="speaker-input" placeholder="e.g., Simo Ahava...">
+                            <button id="goButton" class="go-button">GO</button>
+                            <p class="hint-text">💡 Try: Simo, Krista, Marie, Doug</p>
+                        </div>
+
+                        <!-- Loading State -->
+                        <div class="screen-content hidden" id="loadingState">
+                            <div class="pokeball-loader"></div>
+                            <p class="loading-text">Searching...</p>
+                        </div>
+
+                        <!-- Speaker Profile State -->
+                        <div class="screen-content hidden" id="profileState">
+                            <div class="profile-card">
+                                <div class="profile-header">
+                                    <img id="speakerImage" class="speaker-image" src="" alt="Speaker">
+                                    <h3 id="speakerName" class="speaker-name"></h3>
+                                </div>
+                                <div class="profile-stats">
+                                    <div class="stat-row">
+                                        <span class="stat-label">Company:</span>
+                                        <span id="speakerCompany" class="stat-value"></span>
+                                    </div>
+                                    <div class="stat-row">
+                                        <span class="stat-label">Location:</span>
+                                        <span id="speakerLocation" class="stat-value"></span>
+                                    </div>
+                                    <div class="stat-row">
+                                        <span class="stat-label">LinkedIn:</span>
+                                        <span id="speakerLinkedin" class="stat-value"></span>
+                                    </div>
+                                    <div class="stat-row">
+                                        <span class="stat-label">Website:</span>
+                                        <span id="speakerWebsite" class="stat-value"></span>
+                                    </div>
+                                </div>
+                                <button id="backButton" class="back-button">Search Again</button>
+                            </div>
+                        </div>
+
+                        <!-- Error State -->
+                        <div class="screen-content hidden" id="errorState">
+                            <p class="error-icon">⚠️</p>
+                            <p class="error-text">Speaker not found!</p>
+                            <p class="error-hint">Try searching by first or last name</p>
+                            <button id="retryButton" class="retry-button">Try Again</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pokedex-controls">
+                <div class="control-pad">
+                    <div class="dpad">
+                        <div class="dpad-btn up"></div>
+                        <div class="dpad-btn right"></div>
+                        <div class="dpad-btn down"></div>
+                        <div class="dpad-btn left"></div>
+                        <div class="dpad-center"></div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="button-circle blue"></div>
+                    <div class="button-circle red"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>🎮 Superweek 2026 • Built with 💙 for Analytics Nerds</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="speakers.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
