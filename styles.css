@@ -8,12 +8,13 @@
 body {
     font-family: 'Press Start 2P', cursive;
     background:
-        /* Winter sky gradient */
+        /* Winter sky gradient - deeper blue */
         linear-gradient(to bottom,
-            #B8D4E8 0%,
-            #D4E4F0 30%,
-            #E8F0F7 60%,
-            #F0F6FA 100%
+            #5B9BD5 0%,
+            #7FB3E0 25%,
+            #A3CBE8 50%,
+            #C7E3F0 75%,
+            #E0F0F8 100%
         );
     height: 100vh;
     width: 100vw;
@@ -56,19 +57,43 @@ body::after {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 40%;
+    height: 50%;
     background:
-        /* Snow-covered mountains */
-        radial-gradient(ellipse 800px 300px at 20% 100%, #E8F0F7 0%, #D4E4F0 40%, transparent 60%),
-        radial-gradient(ellipse 600px 250px at 50% 100%, #F0F6FA 0%, #E8F0F7 45%, transparent 65%),
-        radial-gradient(ellipse 700px 280px at 80% 100%, #E8F0F7 0%, #D4E4F0 40%, transparent 60%),
-        /* Snowy ground */
+        /* Tree 1 - left side */
+        conic-gradient(from 180deg at 15% 85%, #2d5016 0deg, #2d5016 60deg, transparent 60deg),
+        radial-gradient(ellipse 15px 8px at 15% 88%, #4a5a3a, transparent),
+        /* Tree 2 - left-center */
+        conic-gradient(from 180deg at 28% 82%, #3d6b4a 0deg, #3d6b4a 50deg, transparent 50deg),
+        radial-gradient(ellipse 12px 8px at 28% 88%, #4a5a3a, transparent),
+        /* Tree 3 - right-center */
+        conic-gradient(from 180deg at 65% 80%, #2d5016 0deg, #2d5016 55deg, transparent 55deg),
+        radial-gradient(ellipse 14px 8px at 65% 88%, #4a5a3a, transparent),
+        /* Tree 4 - right side */
+        conic-gradient(from 180deg at 82% 83%, #3d6b4a 0deg, #3d6b4a 50deg, transparent 50deg),
+        radial-gradient(ellipse 13px 8px at 82% 88%, #4a5a3a, transparent),
+        /* Far back mountain peaks with shadows */
+        conic-gradient(from 210deg at 10% 100%, #C5D9E8 0deg, #D4E4F0 40deg, transparent 40deg),
+        conic-gradient(from 150deg at 35% 100%, #D4E4F0 0deg, #E8F0F7 35deg, transparent 35deg),
+        conic-gradient(from 210deg at 55% 100%, #C5D9E8 0deg, #D4E4F0 45deg, transparent 45deg),
+        conic-gradient(from 150deg at 75% 100%, #D4E4F0 0deg, #E8F0F7 38deg, transparent 38deg),
+        conic-gradient(from 210deg at 90% 100%, #C5D9E8 0deg, #D4E4F0 42deg, transparent 42deg),
+        /* Mid-range mountains - darker */
+        conic-gradient(from 195deg at 25% 100%, #B8D4E8 0deg, #C5D9E8 55deg, transparent 55deg),
+        conic-gradient(from 165deg at 50% 100%, #A8C4D8 0deg, #B8D4E8 48deg, transparent 48deg),
+        conic-gradient(from 195deg at 70% 100%, #B8D4E8 0deg, #C5D9E8 52deg, transparent 52deg),
+        /* Front snowy mountains - lightest */
+        conic-gradient(from 200deg at 18% 100%, #E8F0F7 0deg, #F0F6FA 65deg, transparent 65deg),
+        conic-gradient(from 160deg at 42% 100%, #F0F6FA 0deg, #F8FAFC 58deg, transparent 58deg),
+        conic-gradient(from 200deg at 68% 100%, #E8F0F7 0deg, #F0F6FA 62deg, transparent 62deg),
+        /* Snowy ground with more contrast */
         linear-gradient(to bottom,
             transparent 0%,
-            transparent 40%,
-            #F8FAFC 40%,
-            #EFF6FF 60%,
-            #E0E7FF 100%
+            transparent 35%,
+            #FFFFFF 35%,
+            #F5F9FC 45%,
+            #E8F2F7 60%,
+            #D4E4EE 80%,
+            #C0D8E8 100%
         );
     pointer-events: none;
     z-index: 0;
