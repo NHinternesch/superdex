@@ -230,8 +230,15 @@ document.querySelector('.light-main').addEventListener('click', async function()
     }
 });
 
-// Initialize
-console.log('🎮 Superweek Pokedex initialized!');
+// Initialize - Set random placeholder
+function setRandomPlaceholder() {
+    const speakerNames = Object.values(window.speakers || {}).map(s => s.name);
+    const randomName = speakerNames[Math.floor(Math.random() * speakerNames.length)];
+    speakerInput.placeholder = `e.g., ${randomName}...`;
+}
+
+setRandomPlaceholder();
+
+console.log('🎮 Superdex initialized!');
 console.log('👥 Total speakers loaded:', Object.keys(window.speakers || {}).length);
-console.log('💡 Try searching for: Simo Ahava, Krista Seiden, Marie Fenner, Doug Hall');
 console.log('🎁 Easter egg: Triple-click the blue light for a random speaker!');

@@ -6,7 +6,7 @@ window.speakers = {
         company: 'Duga Digital - Casefabre',
         companyUrl: 'https://www.duga.eu/',
         location: 'France',
-        image: 'https://www.duga.eu/wp-content/uploads/2022/06/Doug-Hall-300x300.jpg',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-doughall-1.jpg',
         linkedin: 'https://www.linkedin.com/in/doughall/',
         website: 'https://www.duga.eu/'
     },
@@ -15,7 +15,7 @@ window.speakers = {
         company: 'Philips',
         companyUrl: 'https://www.philips.com/',
         location: 'Amsterdam, The Netherlands',
-        image: 'https://ui-avatars.com/api/?name=Ibrahim+Elawadi&size=200&background=4dd0e1&color=1a1a1a',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-ibrahimelawadi-3.jpg',
         linkedin: 'https://www.linkedin.com/in/ibrahimelawadi/',
         website: null
     },
@@ -24,7 +24,7 @@ window.speakers = {
         company: 'Piano',
         companyUrl: 'https://piano.io/',
         location: 'London, UK',
-        image: 'https://ui-avatars.com/api/?name=Marie+Fenner&size=200&background=dc3545&color=fff',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-mariefenner-1.jpg',
         linkedin: 'https://www.linkedin.com/in/marie-fenner/',
         website: 'https://piano.io/'
     },
@@ -33,7 +33,7 @@ window.speakers = {
         company: 'Ringside Data',
         companyUrl: 'https://ringsidedata.com/',
         location: 'London, UK',
-        image: 'https://ui-avatars.com/api/?name=Russell+McAthy&size=200&background=ffd93d&color=1a1a1a',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-russellmcathy-1.jpg',
         linkedin: 'https://www.linkedin.com/in/russellmcathy/',
         website: 'https://ringsidedata.com/'
     },
@@ -42,7 +42,7 @@ window.speakers = {
         company: 'Tag Manager Italia',
         companyUrl: 'https://tagmanageritalia.it/',
         location: 'Vicenza, Italy',
-        image: 'https://tagmanageritalia.it/wp-content/uploads/2021/04/matteo-zambon-tag-manager-italia.jpg',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-robertomatteo-1.jpg',
         linkedin: 'https://www.linkedin.com/in/matteozambon/',
         website: 'https://tagmanageritalia.it/'
     },
@@ -51,7 +51,7 @@ window.speakers = {
         company: 'Conductrics',
         companyUrl: 'https://conductrics.com/',
         location: 'Buenos Aires, Argentina',
-        image: 'https://ui-avatars.com/api/?name=Ezequiel+Boehler&size=200&background=6bcf7f&color=1a1a1a',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-ezequielboehler-1.jpg',
         linkedin: 'https://www.linkedin.com/in/ezequielboehler/',
         website: 'https://conductrics.com/'
     },
@@ -60,7 +60,7 @@ window.speakers = {
         company: 'Conductrics',
         companyUrl: 'https://conductrics.com/',
         location: 'Austin (TX), USA',
-        image: 'https://ui-avatars.com/api/?name=Matt+Gershoff&size=200&background=ff6b6b&color=fff',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-mattgershoff-1.jpg',
         linkedin: 'https://www.linkedin.com/in/mattgershoff/',
         website: 'https://conductrics.com/'
     },
@@ -69,7 +69,7 @@ window.speakers = {
         company: '8-bit-sheep',
         companyUrl: 'https://8-bit-sheep.com/',
         location: 'Copenhagen, Denmark',
-        image: 'https://ui-avatars.com/api/?name=Gunnar+Griese&size=200&background=4dd0e1&color=1a1a1a',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-gunnargriese-2.jpg',
         linkedin: 'https://www.linkedin.com/in/gunnargriese/',
         website: 'https://8-bit-sheep.com/'
     },
@@ -78,7 +78,7 @@ window.speakers = {
         company: 'Polka Dot Data',
         companyUrl: 'https://polkadotdata.com/',
         location: 'East Hampshire, United Kingdom',
-        image: 'https://ui-avatars.com/api/?name=Anna+Lewis&size=200&background=dc3545&color=fff',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-annalewis-1.jpg',
         linkedin: 'https://www.linkedin.com/in/anna-lewis-analytics/',
         website: 'https://polkadotdata.com/'
     },
@@ -87,7 +87,7 @@ window.speakers = {
         company: 'Steen.fyi',
         companyUrl: 'https://steen.fyi/',
         location: 'Copenhagen, Denmark',
-        image: 'https://ui-avatars.com/api/?name=Steen+Rasmussen&size=200&background=ffd93d&color=1a1a1a',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-steenrasmussen-1.jpg',
         linkedin: 'https://www.linkedin.com/in/steenfyi/',
         website: 'https://steen.fyi/'
     },
@@ -96,7 +96,7 @@ window.speakers = {
         company: 'Google',
         companyUrl: 'https://www.google.com/',
         location: 'Zurich, Switzerland',
-        image: 'https://ui-avatars.com/api/?name=Daniel+Waisberg&size=200&background=6bcf7f&color=1a1a1a',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-danielwaisberg-1.jpg',
         linkedin: 'https://www.linkedin.com/in/danielwaisberg/',
         website: 'https://www.danielwaisberg.com/'
     },
@@ -105,7 +105,7 @@ window.speakers = {
         company: 'Simmer',
         companyUrl: 'https://www.simoahava.com/',
         location: 'Helsinki, Finland',
-        image: 'https://www.simoahava.com/assets/images/simo-ahava.jpg',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-simoahava-1.jpg',
         linkedin: 'https://www.linkedin.com/in/simoahava/',
         website: 'https://www.simoahava.com/'
     },
@@ -114,7 +114,7 @@ window.speakers = {
         company: 'Cassandra',
         companyUrl: 'https://cassandra.io/',
         location: 'Rome, Italy',
-        image: 'https://ui-avatars.com/api/?name=Gabriele+Franco&size=200&background=ff6b6b&color=fff',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-gabrielefranco-1.jpg',
         linkedin: 'https://www.linkedin.com/in/gabrielefranco/',
         website: null
     },
@@ -141,7 +141,7 @@ window.speakers = {
         company: 'Facts & Feelings',
         companyUrl: 'https://factsandfeelings.com/',
         location: 'Dublin (OH), USA',
-        image: 'https://ui-avatars.com/api/?name=Tim+Wilson&size=200&background=ffd93d&color=1a1a1a',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-timwilson-1.jpg',
         linkedin: 'https://www.linkedin.com/in/tgwilson/',
         website: 'https://factsandfeelings.com/'
     },
@@ -213,7 +213,7 @@ window.speakers = {
         company: 'Piano',
         companyUrl: 'https://piano.io/',
         location: 'Berlin, Germany',
-        image: 'https://ui-avatars.com/api/?name=Nicolas+Hinternesch&size=200&background=4dd0e1&color=1a1a1a',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-nicolashinternesch-1.jpg',
         linkedin: 'https://www.linkedin.com/in/nicolashinternesch/',
         website: 'https://piano.io/'
     },
@@ -222,7 +222,7 @@ window.speakers = {
         company: 'Amplitude',
         companyUrl: 'https://amplitude.com/',
         location: 'San Francisco (CA), USA',
-        image: 'https://ui-avatars.com/api/?name=Krista+Seiden&size=200&background=dc3545&color=fff',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-kristaseiden-2.jpg',
         linkedin: 'https://www.linkedin.com/in/kristaseiden/',
         website: 'https://amplitude.com/'
     },
@@ -231,7 +231,7 @@ window.speakers = {
         company: 'Jellyfish',
         companyUrl: 'https://jellyfish.com/',
         location: 'Malmo, Sweden',
-        image: 'https://ui-avatars.com/api/?name=Juliana+Jackson&size=200&background=ffd93d&color=1a1a1a',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-julianajackson-6.jpg',
         linkedin: 'https://www.linkedin.com/in/julianajackson/',
         website: 'https://jellyfish.com/'
     },
@@ -240,7 +240,7 @@ window.speakers = {
         company: 'Marketinglens',
         companyUrl: 'https://marketinglens.io/',
         location: 'Budapest, Hungary',
-        image: 'https://ui-avatars.com/api/?name=Balázs+Vajna&size=200&background=6bcf7f&color=1a1a1a',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-balazsvajna-1.jpg',
         linkedin: 'https://www.linkedin.com/in/balazs-vajna/',
         website: 'https://marketinglens.io/'
     },
@@ -249,7 +249,7 @@ window.speakers = {
         company: 'Duga Digital',
         companyUrl: 'https://www.duga.eu/',
         location: 'Sevenoaks, United Kingdom',
-        image: 'https://ui-avatars.com/api/?name=Dan+Truman&size=200&background=ff6b6b&color=fff',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-dantruman-1.jpg',
         linkedin: 'https://www.linkedin.com/in/dantruman/',
         website: 'https://www.duga.eu/'
     },
@@ -258,7 +258,7 @@ window.speakers = {
         company: 'Digitl',
         companyUrl: 'https://digitl.com/',
         location: 'Hamburg, Germany',
-        image: 'https://ui-avatars.com/api/?name=Timo+Aden&size=200&background=4dd0e1&color=1a1a1a',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-timoaden-1.jpg',
         linkedin: 'https://www.linkedin.com/in/timoaden/',
         website: 'https://digitl.com/'
     },
@@ -267,7 +267,7 @@ window.speakers = {
         company: 'Aller Media',
         companyUrl: 'https://www.aller.com/',
         location: 'Copenhagen, Denmark',
-        image: 'https://ui-avatars.com/api/?name=Peter+Meyer&size=200&background=dc3545&color=fff',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-petermeyer-1.jpg',
         linkedin: 'https://www.linkedin.com/in/petermeyer/',
         website: 'https://www.aller.com/'
     },
@@ -276,7 +276,7 @@ window.speakers = {
         company: 'Analytics & Co',
         companyUrl: 'https://analyticsandco.com/',
         location: 'Rijeka, Croatia',
-        image: 'https://ui-avatars.com/api/?name=Robert+Petković&size=200&background=ffd93d&color=1a1a1a',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-robertpetkovic-1.jpg',
         linkedin: 'https://www.linkedin.com/in/robertpetkovic/',
         website: 'https://analyticsandco.com/'
     },
@@ -285,7 +285,7 @@ window.speakers = {
         company: 'Analytics Debugger',
         companyUrl: 'https://www.analyticsdebugger.com/',
         location: 'San Sebastián, Spain',
-        image: 'https://www.analyticsdebugger.com/wp-content/uploads/2020/01/david-vallejo.jpg',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-davidvallejo-2.jpg',
         linkedin: 'https://www.linkedin.com/in/david-vallejo-fernandez/',
         website: 'https://www.analyticsdebugger.com/'
     },
@@ -294,7 +294,7 @@ window.speakers = {
         company: null,
         companyUrl: null,
         location: 'Montélimar, France',
-        image: 'https://ui-avatars.com/api/?name=Julien+Coquet&size=200&background=6bcf7f&color=1a1a1a',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-juliencoquet-2.jpg',
         linkedin: 'https://www.linkedin.com/in/juliencoquet/',
         website: null
     },
@@ -303,7 +303,7 @@ window.speakers = {
         company: null,
         companyUrl: null,
         location: 'Haarlem, The Netherlands',
-        image: 'https://ui-avatars.com/api/?name=Peter+ONeill&size=200&background=ff6b6b&color=fff',
+        image: 'https://superweek.hu/images/pre-agenda-2026/2026-peteroneill-1.jpg',
         linkedin: 'https://www.linkedin.com/in/petergoneill/',
         website: null
     },
