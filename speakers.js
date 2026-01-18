@@ -382,10 +382,16 @@ window.speakers = {
     }
 };
 
+// Helper function to normalize strings by removing diacritics
+function normalizeString(str) {
+    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+}
+
 // Helper function to find speaker by partial name match
 // Make findSpeaker available globally
 window.findSpeaker = function(query) {
     const searchQuery = query.toLowerCase().trim();
+    const normalizedQuery = normalizeString(query.trim());
 
     console.log('Searching for:', searchQuery);
     console.log('Total speakers:', Object.keys(window.speakers).length);
@@ -399,15 +405,24 @@ window.findSpeaker = function(query) {
     // Partial match (first name, last name, or full name)
     for (const [key, speaker] of Object.entries(window.speakers)) {
         const name = speaker.name.toLowerCase();
+        const normalizedName = normalizeString(speaker.name);
         const firstName = name.split(' ')[0];
         const lastName = name.split(' ').slice(-1)[0];
+        const normalizedFirstName = normalizeString(speaker.name.split(' ')[0]);
+        const normalizedLastName = normalizeString(speaker.name.split(' ').slice(-1)[0]);
 
         // Match if query contains any part of the name or vice versa
+        // Check both original and normalized versions for diacritic-insensitive search
         if (name.includes(searchQuery) ||
             searchQuery.includes(firstName) ||
             searchQuery.includes(lastName) ||
             firstName.includes(searchQuery) ||
-            lastName.includes(searchQuery)) {
+            lastName.includes(searchQuery) ||
+            normalizedName.includes(normalizedQuery) ||
+            normalizedQuery.includes(normalizedFirstName) ||
+            normalizedQuery.includes(normalizedLastName) ||
+            normalizedFirstName.includes(normalizedQuery) ||
+            normalizedLastName.includes(normalizedQuery)) {
             console.log('Partial match found:', speaker.name);
             return speaker;
         }
