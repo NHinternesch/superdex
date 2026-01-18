@@ -270,7 +270,7 @@ document.querySelector('.light-main').addEventListener('click', async function()
 function setRandomPlaceholder() {
     const speakerNames = Object.values(window.speakers || {}).map(s => s.name);
     const randomName = speakerNames[Math.floor(Math.random() * speakerNames.length)];
-    speakerInput.placeholder = `e.g., ${randomName}...`;
+    speakerInput.placeholder = `${randomName}`;
 }
 
 setRandomPlaceholder();
