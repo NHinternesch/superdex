@@ -73,7 +73,11 @@ window.speakers = {
         location: 'Buenos Aires, Argentina',
         image: 'https://superweek.hu/images/pre-agenda-2026/2026-ezequielboehler-1.jpg',
         linkedin: 'https://www.linkedin.com/in/ezequielboehler/',
-        website: 'https://conductrics.com/'
+        website: 'https://conductrics.com/',
+        moves: [
+            { name: 'Flywheel Fusion', damage: 125, type: '🔄' },
+            { name: 'Survey Surge', damage: 95, type: '📋' }
+        ]
     },
     'matt gershoff': {
         name: 'Matt Gershoff',
@@ -82,7 +86,11 @@ window.speakers = {
         location: 'Austin (TX), USA',
         image: 'https://superweek.hu/images/pre-agenda-2026/2026-mattgershoff-1.jpg',
         linkedin: 'https://www.linkedin.com/in/mattgershoff/',
-        website: 'https://conductrics.com/'
+        website: 'https://conductrics.com/',
+        moves: [
+            { name: 'Interaction Interference', damage: 105, type: '🔀' },
+            { name: 'Statistical Chaos', damage: 135, type: '📊' }
+        ]
     },
     'gunnar griese': {
         name: 'Gunnar Griese',
@@ -156,7 +164,11 @@ window.speakers = {
         location: 'Rome, Italy',
         image: 'https://superweek.hu/images/pre-agenda-2026/2026-gabrielefranco-1.jpg',
         linkedin: 'https://www.linkedin.com/in/gabrielefranco/',
-        website: null
+        website: null,
+        moves: [
+            { name: 'Revenue Multiplier', damage: 145, type: '💰' },
+            { name: 'MMM Meteor', damage: 120, type: '📈' }
+        ]
     },
     'jordan peck': {
         name: 'Jordan Peck',
@@ -165,7 +177,11 @@ window.speakers = {
         location: 'Leeds, UK',
         image: 'https://ui-avatars.com/api/?name=Jordan+Peck&size=200&background=4dd0e1&color=1a1a1a',
         linkedin: 'https://www.linkedin.com/in/jordan-peck/',
-        website: 'https://snowplow.io/'
+        website: 'https://snowplow.io/',
+        moves: [
+            { name: 'Bot vs Human Divide', damage: 110, type: '🤖' },
+            { name: 'Agent Track Attack', damage: 125, type: '🕵️' }
+        ]
     },
     'jon su': {
         name: 'Jon Su',
@@ -174,7 +190,11 @@ window.speakers = {
         location: 'London, UK',
         image: 'https://ui-avatars.com/api/?name=Jon+Su&size=200&background=dc3545&color=fff',
         linkedin: 'https://www.linkedin.com/in/jonsu/',
-        website: 'https://snowplow.io/'
+        website: 'https://snowplow.io/',
+        moves: [
+            { name: 'AI Behavior Blast', damage: 115, type: '🧠' },
+            { name: 'Identity Crisis', damage: 100, type: '❓' }
+        ]
     },
     'tim wilson': {
         name: 'Tim Wilson',
@@ -196,7 +216,11 @@ window.speakers = {
         location: 'Aalst, Belgium',
         image: 'https://ui-avatars.com/api/?name=Fosca+Fimiani&size=200&background=6bcf7f&color=1a1a1a',
         linkedin: 'https://www.linkedin.com/in/fosca-fimiani/',
-        website: 'https://multiminds.eu/'
+        website: 'https://multiminds.eu/',
+        moves: [
+            { name: 'Unknown Territory Trek', damage: 105, type: '🗺️' },
+            { name: 'Alternative Platform Pulse', damage: 130, type: '🔄' }
+        ]
     },
     'jason packer': {
         name: 'Jason Packer',
@@ -205,7 +229,11 @@ window.speakers = {
         location: 'Columbus (OH), USA',
         image: 'https://ui-avatars.com/api/?name=Jason+Packer&size=200&background=ff6b6b&color=fff',
         linkedin: 'https://www.linkedin.com/in/jasonpacker/',
-        website: 'https://quantable.com/'
+        website: 'https://quantable.com/',
+        moves: [
+            { name: 'Migration Mastery', damage: 120, type: '🚀' },
+            { name: 'Evaluation Onslaught', damage: 95, type: '⚖️' }
+        ]
     },
     'lukáš čech': {
         name: 'Lukáš Čech',
@@ -214,7 +242,11 @@ window.speakers = {
         location: 'Prague, Czechia',
         image: 'https://ui-avatars.com/api/?name=Lukáš+Čech&size=200&background=4dd0e1&color=1a1a1a',
         linkedin: 'https://www.linkedin.com/in/lukascech/',
-        website: null
+        website: null,
+        moves: [
+            { name: 'Tag Terminator', damage: 115, type: '🏷️' },
+            { name: 'Third-Party Tempest', damage: 140, type: '⚡' }
+        ]
     },
     'siavash kanani': {
         name: 'Siavash Kanani',
@@ -223,7 +255,11 @@ window.speakers = {
         location: 'Budapest, Hungary',
         image: 'https://ui-avatars.com/api/?name=Siavash+Kanani&size=200&background=dc3545&color=fff',
         linkedin: 'https://www.linkedin.com/in/siavashkanani/',
-        website: 'https://siavak.com/'
+        website: 'https://siavak.com/',
+        moves: [
+            { name: 'Anomaly Annihilator', damage: 135, type: '🔍' },
+            { name: 'Signal Seeker', damage: 110, type: '📡' }
+        ]
     },
     'fred pike': {
         name: 'Fred Pike',
@@ -232,7 +268,11 @@ window.speakers = {
         location: 'Milwaukee (WI), USA',
         image: 'https://ui-avatars.com/api/?name=Fred+Pike&size=200&background=ffd93d&color=1a1a1a',
         linkedin: 'https://www.linkedin.com/in/fredpike/',
-        website: 'https://northwoods.com/'
+        website: 'https://northwoods.com/',
+        moves: [
+            { name: 'Consent Conundrum', damage: 90, type: '✅' },
+            { name: 'AI Cookie Crusher', damage: 125, type: '🤖' }
+        ]
     },
     'denis golubovskyii': {
         name: 'Denis Golubovskyii',
@@ -241,7 +281,11 @@ window.speakers = {
         location: 'Kyiv, Ukraine',
         image: 'https://ui-avatars.com/api/?name=Denis+Golubovskyii&size=200&background=6bcf7f&color=1a1a1a',
         linkedin: 'https://www.linkedin.com/in/golubovskyii/',
-        website: 'https://stape.io/'
+        website: 'https://stape.io/',
+        moves: [
+            { name: 'Browser of the Future', damage: 130, type: '🌐' },
+            { name: 'Privacy Pulse', damage: 105, type: '🔒' }
+        ]
     },
     'jeremy lutz': {
         name: 'Jeremy Lutz',
@@ -250,7 +294,11 @@ window.speakers = {
         location: 'Hamburg, Germany',
         image: 'https://ui-avatars.com/api/?name=Jeremy+Lutz&size=200&background=ff6b6b&color=fff',
         linkedin: 'https://www.linkedin.com/in/jeremylutz/',
-        website: null
+        website: null,
+        moves: [
+            { name: 'Mindful Meditation', damage: 75, type: '🧘' },
+            { name: 'Introspective Impact', damage: 100, type: '💭' }
+        ]
     },
     'nicolas hinternesch': {
         name: 'Nicolas Hinternesch',
@@ -298,7 +346,11 @@ window.speakers = {
         location: 'Budapest, Hungary',
         image: 'https://superweek.hu/images/pre-agenda-2026/2026-balazsvajna-1.jpg',
         linkedin: 'https://www.linkedin.com/in/balazs-vajna/',
-        website: 'https://marketinglens.io/'
+        website: 'https://marketinglens.io/',
+        moves: [
+            { name: 'Feed Frenzy', damage: 140, type: '📊' },
+            { name: 'Money Maker', damage: 155, type: '💸' }
+        ]
     },
     'dan truman': {
         name: 'Dan Truman',
@@ -307,7 +359,11 @@ window.speakers = {
         location: 'Sevenoaks, United Kingdom',
         image: 'https://superweek.hu/images/pre-agenda-2026/2026-dantruman-1.jpg',
         linkedin: 'https://www.linkedin.com/in/dantruman/',
-        website: 'https://www.duga.eu/'
+        website: 'https://www.duga.eu/',
+        moves: [
+            { name: 'Who You Work For', damage: 100, type: '💼' },
+            { name: 'Impact Inquiry', damage: 85, type: '❓' }
+        ]
     },
     'timo aden': {
         name: 'Timo Aden',
@@ -329,7 +385,11 @@ window.speakers = {
         location: 'Copenhagen, Denmark',
         image: 'https://superweek.hu/images/pre-agenda-2026/2026-petermeyer-1.jpg',
         linkedin: 'https://www.linkedin.com/in/petermeyer/',
-        website: 'https://www.aller.com/'
+        website: 'https://www.aller.com/',
+        moves: [
+            { name: 'Quality Control Quake', damage: 120, type: '✨' },
+            { name: 'Intelligent Output', damage: 145, type: '🧠' }
+        ]
     },
     'robert petković': {
         name: 'Robert Petković',
@@ -338,7 +398,11 @@ window.speakers = {
         location: 'Rijeka, Croatia',
         image: 'https://superweek.hu/images/pre-agenda-2026/2026-robertpetkovic-1.jpg',
         linkedin: 'https://www.linkedin.com/in/robertpetkovic/',
-        website: 'https://analyticsandco.com/'
+        website: 'https://analyticsandco.com/',
+        moves: [
+            { name: 'Million Dollar Dream', damage: 165, type: '💰' },
+            { name: 'Pricing Power Punch', damage: 130, type: '💸' }
+        ]
     },
     'david vallejo': {
         name: 'David Vallejo',
@@ -360,7 +424,11 @@ window.speakers = {
         location: 'Montélimar, France',
         image: 'https://superweek.hu/images/pre-agenda-2026/2026-juliencoquet-2.jpg',
         linkedin: 'https://www.linkedin.com/in/juliencoquet/',
-        website: null
+        website: null,
+        moves: [
+            { name: 'AI Tsunami', damage: 110, type: '🌊' },
+            { name: 'Power Channeling', damage: 70, type: '🙏' }
+        ]
     },
     'peter oneill': {
         name: "Peter O'Neill",
@@ -369,7 +437,11 @@ window.speakers = {
         location: 'Haarlem, The Netherlands',
         image: 'https://superweek.hu/images/pre-agenda-2026/2026-peteroneill-1.jpg',
         linkedin: 'https://www.linkedin.com/in/petergoneill/',
-        website: null
+        website: null,
+        moves: [
+            { name: 'Conference Wisdom', damage: 90, type: '📚' },
+            { name: 'Weekly Insight Blast', damage: 105, type: '💡' }
+        ]
     },
     'kris ewald': {
         name: 'Kris Ewald',
@@ -378,7 +450,11 @@ window.speakers = {
         location: 'Zug, Switzerland',
         image: 'https://ui-avatars.com/api/?name=Kris+Ewald&size=200&background=4dd0e1&color=1a1a1a',
         linkedin: 'https://www.linkedin.com/in/krisewald/',
-        website: null
+        website: null,
+        moves: [
+            { name: 'Swiss Precision Strike', damage: 125, type: '🎯' },
+            { name: 'Data Mountain Climb', damage: 110, type: '⛰️' }
+        ]
     }
 };
 
